@@ -1,0 +1,331 @@
+Java
+=====
+>> Programming Language
+-----> The language which interacts with the computer
+------> user ------> computer/laptop
+-------> HI <------> HI 
+-------> GoodMorning <------------> GoodMorning. || interaction
+
+platform : ---> type "Hi" and "Good Morning".
+----------------------------------------------
+JRE --> Java Runtime Environment
+
+>>>>>> Execution :---> A command/order/talk/click is given to 
+
+java program which understands and displays at runtime.
+
+JDK --> Java Development Kit 
+--------------------------------
+Java Container || Java Home || JavaTItanic
+
+-- Packages ---> Containers ----> JavaFiles created by user
+-- Libraries ---> Containers ---> JavaFiles -- already made for user 
+-------------------------------
+>>> Platform where gives a room to JRE.
+
+---> Eclipse
+---> InteliJ
+---> NetBeans
+
+High level langauge
+45Rg56E@2 -- Computer
+Sachin  ----> user language
+
+>>> user --> Hi --> Computer 23S@13 ---> Hi ---> User
+
+	UserSide                ComputerSide
+
+	Hi 						23S@13  javaLanguage converts user readiblity
+
+
+JDK -----> JVM ----> JRE
+
+
+Java-Features
+--------------------
+1. Simple 
+2. Object-Oriented
+3. Portable
+4. Platform independent
+5. Secured
+6. Robust ---
+	>> Strong memory management ===> heap and stack memory!
+7. Interpreted ---> line by line
+8. High performance
+9. Dynamic
+10. Multithreaded
+
+
+IDE
+----
+>> Java Project 
+---> src
+-----> packages
+-------> classes
+
+
+Syso  ctrl+space button
+
+We can take as many as print statement. 
+
+>> whereever we see <Name> (optional) () --> function/Method
+>> a function is a command which has a set of instructions to perform 
+a specific task. 
+
+System.out.println(); <---- Command -- jre ---> understand ==> console..!
+
+
+-----------**************----------------**********---------------------
+
+>> Java Storage management 
+1. Java DataTypes
+2. Java Varibles
+
+>> Java Datatypes 
+------------------
+- Data types specify the different sizes and values that can be in the
+variable. There are two types of datatypes
+1. Primitive 
+2. Non Primitive.
+
+>>> Note: whether java is 100% oopL ???? why!
+-----> Because it is supportive to promitive datatypes. 
+
+
+Dataype notations
+---------------------
+if I wanted the numbers in my program    -------> Integers (Short, Long) --> 4bytes 
+if I wanted the letters in my program    -------> Charecters ----> 2 bytes ----> 16bits
+if I wanted the words in my program      -------> Strings  -----> 8bytes ----> 64bits
+if I wanted the decimal in my program    -------> Floats ----> 4bytes -------> 32bits
+if I wanted the bytes in my program      -------> Byte ----------> 1bytes ---> 8bits
+if I wanted to state true/false in my program --> Boolean ----> 1bit
+
+if I wanted the decimal in my program  ------> double/float 
+
+pi = 3.14 -- float
+pi =3.14267893775784 --- double (in java by default all the decimal numbers are double)
+
+and we need to convert into float if needed. 
+
+JVM integer -----> 4bytes  1byte = 8bits || 4*8 = 32bits
+
+
+Note : In order to make a use of variables we need datatypes. 
+
+>>> Java variables
+------------------
+>>>>>>> It a storage concept which stores the data as the datatype accordingly. 
+and variable needs to named every time to make use of it. 
+>>>>>> Varibale is also called storage memory location
+
+I wanted to store a number of 100. ---->000000 1100100 = 13bits 
+
+int number = 100;
+
+int <--- Datatype 
+number <-- name of the variable
+100 <--- value/(data, memory).
+
+
+#Varibles have three different types
+1. Local variable -- A variable decalared inside the body of the method. is called
+						local variable
+2. Instance variable -- A variable insode the class but outside the body of the method.
+					is called instance variable.
+3. static variable  -- A variable that is declared with the keyword static, is 
+                     static variable it cannot be local.
+
+Note : local variable must not be "static" 
+
+String
+======
+>>> string must and should denoted/declared in double quotes " " 
+>>> string is always collections of words/letters.
+>>> But its optional to single letters.
+
+
+
+***************************************************************************************
+
+JavaLogics
+--------------
+>> Operatiors
+
+1. Unary Operators ----------------> pre/post -----> increment +1 /decement -1  
+2. Arithmetic Operators -----------> A,S,M,D,M -----> +, - , * , / , %
+3. Relational Operators -----------> lesser, greater, equal to, not equal, --> <,>,==,!=
+4. Logical Operators ---------------> and, Or, not ----> && , || , !
+5. Ternary Operator ---------------->  ? : expression true/false ----> true/false
+6. Assignment Operator -------------> provide ----> =, +=, -=, *=, /=, %=
+
+
+Ternary Operator
+------------------
+Syntax:
+---------
+
+variable = expression ? predicate if true : predicate if false.
+
+int numone=8;
+int numtwo=7;
+
+//condition
+
+numtwo=(numone!=numtwo)? true:false
+numtwo=(numone!=numtwo)? 100:200
+
+>> Conditinal statements
+--------------------------
+1. if statement --> If there's a single condition.
+2. if else statement -> if there's single condition 
+3. if else if else statement --> If there's more than two conditions
+4. if else if else if else statement --> If there's multiple conditions.
+
+
+>>  IF statement
+------------------
+----> if statement always takes true side, if the given expression is true
+than only if statement gets called and executes the body of expression.
+----> if statement is used to conditonal the flow of code. 
+
+2 ==> even or odd ?
+2244 ===> even or odd?
+5688764 ==> even or odd?
+987907680 ==> even or odd?
+
+#Assignment 
+---------------
+Use the if-statement and with the scanner print the basic details of the person. 
+for string return type the scanner can be used nextLine();
+
+person name
+person age
+person address
+person organization
+person location. ----> Scanner class <--- Input!!
+
+>> Switch statement
+----------------------
+Syntax:
+---------
+
+switch(<variable or integer expression>){
+	case 1:
+		//java code 
+	case 2:
+		//java code
+	case 3:
+		//java code
+	
+	..
+	..
+	..
+
+	default :
+		//java code
+}
+
+Assignment
+==========
+Use the switch statement and write java calculator program dynamically.
+Use the switch statemet and find the vowles and consonants dynamically.
+
+
+Javaloops
+------------
+1. For loop
+2. while loop
+3. nested loop
+
+>>> Automate the code. Code itself run for the limited time period untill a particular
+condition returns false. 
+
+While loop :--> to execute a set of statements repeatedly untill the specified
+condition returns false. 
+
+syntax:
+========
+while(condtion){
+	/* --- while loop body -- */
+	//java code
+	//statements
+
+}
+
+OOP concepts in Java
+---------------------
+>> What is an object
+>> what is a class
+>> Contructors 
+>> Methods 
+>> Object oriented programming features
+	-- Abstraction
+	-- Encapsulation
+	-- Inheritance
+	-- Polymorphism
+>> Abstract class
+>> Interfaces
+
+OOPS ---> Object Oriented Programming System
+>> It is a programming paradigm based on the concept of "objects"
+that contains data and methods (data is -- Variables , methods -- functions)
+
+>> The primary purpose of object-oriented programming is to increase the flexibility
+and maintainability of the programs.
+ 
+>> Object-oriented programming brings together data and its behavior(methods)
+in a single location(object) makes it easier to understand how a program works.
+
+
+What is an object?
+>> Object is a bundle of data and its behavior (methods)
+
+
+>> Object : --> is an entity of the class.
+entity ---> small piece of the container
+       ---> remarkable thing
+
+Class ----> Room
+
+Objects ----> windows, doors, bed, table, bedlamp
+>> Objects have two charecteristics ----> they have states and behaviors.
+
+
+
+humanBody
+
+>> hands, legs, head, face   ---> states
+
+>> write, walk, think, makeup ---> behavior
+
+Horse
+
+States ---> Legs, Tail, Eyes, Ears
+
+behavor ---> Runs, Sleeping, Eating
+
+Bulb
+
+states ---> Color, Shape, Size, Price, Watts
+
+behavior ---> Glow, standBy
+
+Objects ----> Class
+
+*********************************************************************
+
+Create class -- Animal 
+datamemebers  ----> AnimalName,Anaimalage,AnimalBreed,AnimalColor
+
+*********************************************************************
+
+>> Object and class Example ----> Initialization through the constructor.
+***************************************************************************
+
+>> Create 3 different classes. 
+class1 --- cricket ---> jurseyno, name, age, careerinyears
+class2 --- hockey  ---> jurseyno, name, age, careerinyears
+class3 --- tennis  ---> jurseyno, name, age, careerinyears
+
+
