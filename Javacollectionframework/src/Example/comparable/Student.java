@@ -20,6 +20,5 @@ public class Student {
 		for(TestSort st:object) {
 			System.out.println(st.rollNo + " " + st.name+ " " + st.age);
 		}
-
 	}
 }
