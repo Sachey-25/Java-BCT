@@ -1,0 +1,66 @@
+<!-- 
+    <input>
+    <lable>
+    <select>
+    <textarea>
+    <button>
+    <fieldset>
+    <legend>
+    <datalist>
+    <output>
+    <option>
+    <optgroup>
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Html Select Element</title>
+    </head>
+    <body>
+        <p>The 'select' element defines a drop-down list: </p>
+        <form>
+            <label for="colors">Choose a color</label>
+            <select id="colors" name="colors">
+                <option value="white">White</option>
+                <option value="black">Black</option>
+                <option value="red">Red</option>
+                <option value="yellow">Yellow</option>
+                <p> You can preselect an option with the selected attribute</p>
+                <option value="none" selected>none</option>
+            </select>
+            <input type="submit">
+            <h2>Textarea</h2>
+            <p>The textarea element defines a multi-linr input field</p>
+            <form>
+                <textarea name="message" rows="10" cols="20"></textarea>
+                <button type="button" onclick="alert('Hello World')">Click me</button>
+            </form>
+            <p>The Fieldset element is used to group related data in a form, and 
+                the legend element defines a caption for the filedset element.
+            </p>
+            <fieldset>
+                <legend>Login details</legend>
+                <label for="fname">Username</label>
+                <input type="text" id="fname" name="fname" value="Sachin"><br/>
+                <lable for="pwd">Password</lable>
+                <input type="password" id="pwd" name="pwd" value="Sachin@2510"><br/>
+                <input type="submit" value="submit">
+            </fieldset>
+            <p> The DataList element specifies a list of pre-defined optiones for an input</p>
+            <form>
+                <!--Vegitable-->
+                 <input list="phones" name="phones">
+                 <datalist id="phones">
+                    <option value="iPhone">iPhone</option>
+                    <option value="MiPhone">MiPhone</option>
+                    <option value="OnePlus">OnePlus</option>
+                    <option value="Motorolla">Motorolla</option>
+                    <option value="Nokia">Nokia</option>
+                    <option value="Samsung">Samsung</option>
+                    <option value="Vivo">Vivo</option>
+                </datalist>
+                <input type="submit">
+            </form>
+        </form>
+    </body>
+</html>

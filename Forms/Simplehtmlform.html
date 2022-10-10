@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple Registration form</title>
+    </head>
+    <body>
+        <form action="#">
+            <table>
+                <tr>
+                    <td class="tdLable">
+                        <label for="register_name" class="lable">Enter name: </label>
+                    </td>
+                    <td>
+                        <input type="text" name="name" value="" id="register_name"
+                        style="width: 160px;"/> 
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="tdLable">
+                            <label for="register_password" class="lable">Enter password:</label>
+                        </td>
+                        <td>
+                            <input type="password" name="password" id="register_password"
+                            style="width: 160px;" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdLable">
+                            <label for="register_email" class="lable">Enter email:</label>
+                        </td>
+                        <td>
+                            <input type="email" name="password" id="register_email"
+                            style="width: 160px;" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tdLable">
+                            <label for="register_gender" class="lable">Enter gender</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="gender" id=""register_gendermale" value="male"/>
+                            <label for="register_gendermale">male</label>
+                            <input type="radio" name="gender" id=""register_gendermale" value="female"/>
+                            <label for="register_genderfemale">female</label>
+                        </td>
+                    </tr>       
+                    <tr>
+                        <td class="tdLable">
+                            <label for="register_country" class="lable">Select country</label>
+                        </td>
+                        <td>
+                            <select name="country" id="register_country" style="width: 160px;">
+                                <option value="India">India</option>
+                                <option value="USA">US</option>
+                                <option value="Canada">Canada</option>
+                                <option value="Russia">Russia</option>
+                            </select>
+                        </td>
+                    </tr>   
+                    <tr>
+                        <td colspan="2">
+                            <div align="right">
+                                <input type="submit" id="register" value="register" />
+
+                            </div>
+                        </td>
+                    </tr>
+            </table>
+        </form>
+    </body>
+</html>
