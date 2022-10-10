@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MouseOver event</title>
+        <style>
+            div{
+                width: 100px;
+                height: 100px;
+                border: 1px solid black;
+            }
+            div.one{
+                width: 100px;
+                height: 100px;
+                border: 1px solid red;
+                margin: 20px;
+                padding: 30px;
+            }
+        </style>
+    </head>
+    <body onmousemove="myMouseMove(event)" onmouseout="mouseOut()">
+        
+       
+        <p id="demo"></p>
+        <script>
+            function myMouseMove(event){
+                var x=event.clientX;
+                var y=event.clientY;
+                var cooridinate="Coordinates:(" + x + "," + y + ")";
+                document.getElementById("demo").innerHTML=cooridinate;
+            }
+            function mouseOut(){
+                document.getElementById("demo").innerHTML="";
+            }
+        </script>
+        <div class="one" onmouseover="mouseOverfun()">
+            <p>MouseOverme</p>
+        </div>
+        <script>
+            var xaxis=0;
+            var yasix=0;
+            function mouseOverfun(){
+                document.getElementById("over").innerHTML=y;
+            }
+
+        </script>
+    </body>
+</html>

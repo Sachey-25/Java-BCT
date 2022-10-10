@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Html-Css Table</title>
+        <style>
+            #customers{
+                font-family: Arial;
+                border-collapse: collapse;
+                width:50%;
+            }
+            #customers td,#customer th{
+                border: 1px solid #ddd;
+                padding: 8px;
+            }
+            #customers tr:nth-child(even){
+                background-color: burlywood;
+            }
+            #customers th{
+                padding-top: 12px;
+                padding-bottom: 12px;
+                text-align:left;
+                background-color: chartreuse;
+                color: white;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <h1>A Fancy Table</h1>
+        <table id="customers">
+            <tr>
+                <th>Company</th>
+                <th>Contact</th>
+                <th>Country</th>
+            </tr>
+            <tr>
+                <td>Wipro Technoligies</td>
+                <td>Wipro@hrservices.com</td>
+                <td>India</td>
+            </tr>
+            <tr>
+                <td>BCT</td>
+                <td>bct@hrservices.com</td>
+                <td>India</td>
+            </tr>
+            <tr>
+                <td>Infosy Technoligies</td>
+                <td>Infosys@hrservices.com</td>
+                <td>India</td>
+            </tr>
+            <tr>
+                <td>Dell Technoligies</td>
+                <td>dell@hrservices.com</td>
+                <td>California</td>
+            </tr>
+            <tr>
+                <td>Delliotte Technoligies</td>
+                <td>dl@hrservices.com</td>
+                <td>India</td>
+            </tr>
+
+
+        </table>
+    </body>
+</html>

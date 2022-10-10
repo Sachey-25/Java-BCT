@@ -1,0 +1,39 @@
+p.one{
+    border-style: solid;
+    border-width: 5px;
+    border-color: aqua;
+    border-top-style: dotted;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-bottom-style: dotted;
+
+
+}
+p.two{
+    border-style: solid;
+    border-width: medium;
+    border-color: violet;
+    border-right-style: solid;
+    border-left-style: solid;
+}
+p.three{
+    border-style: dotted;
+    border-width: 2px;
+    border-color: indigo;
+    border-right-style: solid;
+    border-left-style: solid;
+}
+p.four{
+    border-style: dotted;
+    border-width: thick;
+    border-color:blue;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-bottom: 6px solid pink;
+}
+p.five{
+    border-style: dotted;
+    border-width: medium;
+    border-color: green;
+    border-radius: 5px;
+}

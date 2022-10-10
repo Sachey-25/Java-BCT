@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Html Events</title>
+    </head>
+    <body onload="loadWeb()">
+        
+        <h2>HtmlEvents</h2>
+        <p> 1. onchange -- An Html element has been changed from one form to another
+            2. onclick -- The user clicks an HTML element (button, submit)
+            3. onmouseover -- The user moves the mouse over an HTML element
+            4. onmouseout -- The user moves the mouse away from an HTML element
+            5. onkeydown -- The user pushes a keyboad key
+            6. onload -- The browser has finished loading the page.
+
+        </p>
+        <p>List of spectacle - products</p>
+        <select id="select" onchange="myProducts()">
+            <option value="Rectangle">Reactagle</option>
+            <option value="Oval">Oval</option>
+            <option value="Round">Round</option>
+            <option value="Frameless">Frameless</option>
+        </select>
+        <h4>
+            When we select any new product, a function call must take place.
+            that function triggers the output as per the logic.
+        </h4>
+        <p id="prod"></p>
+        <script>
+            function myProducts(){
+                //storage object
+                var product=document.getElementById("select").value
+                document.getElementById("prod").innerHTML="selected product is : " + product
+            }
+        </script>
+
+        <h1>The onlick Event</h1>
+        <p>Click to see the change</p>
+        <p id="click"></p>
+                <button onclick="getElementById('click').innerHTML=Date()">
+                        What is a time right now?
+                </button>
+        <h4 id="change" onclick="clickonChange()" >Click to see another change.</h4>
+        <script>
+            function clickonChange(){
+                document.getElementById("change").style.color="brown";
+            }
+        </script>
+        <h2>Onload</h2>
+        <p>This provides an information if page available, then it loads.</p>
+        <script>
+            function loadWeb(){
+                alert("Page is been loaded, ")
+            }
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript strings</title>
+    </head>
+    <body>
+        <h2>Javascript strings</h2>
+        <p>
+            Javascript allows to work on strings
+            string can be denoted in single or double quotations.
+        </p>
+        <p id="name"></p>
+        <script>
+            //javascript strings
+            let firstname="Sachin";
+            let lastname='Anil';
+            document.getElementById("name").innerHTML=firstname + " " + lastname;
+        </script>
+        <h2>String methods</h2>
+        <h3>length()</h3>
+        <p>Calculates the total number of letters in the string</p>
+        <p id="len"></p>
+        <script>
+            let text="SachinAnil";
+            document.getElementById("len").innerHTML=text.length;
+        </script>
+        <h2>String methods</h2>
+        <h3>slice()</h3>
+        <p>
+            Its a condition that to see the string as needed/required.
+            There are three different methods
+            1. slice(start,end);
+            2. substring(start,end);
+            3. substr(start,end);
+            Note: end is exclusive 
+            Example:
+            start, S=0 A=1 C=2 H=3 I=4 end N=5 (0 is also a count hence length is : 6) 
+            (start=0,end=5) 0,1,2,3,4 here 5 is ending element hence its exclusive.
+
+        </p>
+        <p id="slice"></p>
+        <p id="slic"></p>
+        <p id="s"></p>
+        <p id="l"></p>
+        <p id="i"></p>
+        <p id="c"></p>
+        <script>
+            let string="Sachin,Anil,Bangalore";
+            document.getElementById("slice").innerHTML=string.slice(0,11);
+            document.getElementById("slic").innerHTML=string.substring(4,15);
+            document.getElementById("s").innerHTML=string.slice(13,19);
+            document.getElementById("l").innerHTML=string.substr(0,11);
+        </script>
+        <h2>String methods</h2>
+        <h3>replace</h3>
+        <p>
+            replaces the current values of the string
+            1. The replace() method does not change the string it is called on.
+            2. The replace() method returns a new string
+            3. The relace() method replaces only the first match.
+        </p>
+        <button onclick="myFun()">click button</button>
+        <p id="repl">python</p>
+        <script>
+           function myFun(){
+            let text=document.getElementById("repl").innerHTML;
+            document.getElementById("repl").innerHTML=text.replace("python","Javascript");
+           }
+        </script>
+        <h2>String methods</h2>
+        <h3>toUppercase</h3>
+        <p>
+            Converting string to lower case. SACHIN, Sachin Anil
+            only the uppercase(capital letters) converted to lowercase.
+        </p>
+
+        <button onclick="toUpper()">Tryme</button>
+        <p id="upper">Html</p>
+        <script>
+        function toUpper(){
+            let text=document.getElementById("upper").innerHTML;
+            document.getElementById("upper").innerHTML=text.toUpperCase();
+        }
+        </script>
+        <h3>toLowercase</h3>
+        <button onclick="toLower()">Tryme</button>
+        <p id="lower">JaVaScriPt</p>
+        <p>
+            Converting string to upper case. SACHIN, Sachin Anil
+            only the lowercase(small letters) converted to uppercase.
+        </p>
+        <script>
+        function toLower(){
+        let text=document.getElementById("lower").innerHTML;
+            document.getElementById("lower").innerHTML=text.toLowerCase();
+        }
+        </script>
+    </body>
+</html>

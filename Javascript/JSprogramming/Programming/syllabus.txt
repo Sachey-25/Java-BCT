@@ -1,0 +1,16 @@
+1. JavaScript if statement
+2. JavaScript if, else statement
+3. JavaScript if else if else statemnent
+4. JavaScript if else ladder
+5. JavaScript switch statement
+6. JavaScript Loops -- For loop, for in loop, for Of loop, while loop
+7. JavaScript conditional statements -- continue and break;
+8. JavaScript collectiojns iterables, sets, Maps
+
+------------------****************----------Advanced--------------**************---------------
+1. JavaScript classes
+2. JavaScript objects
+3. JavaScript Arrow functions
+4. JavaScript functions -- Call(), Apply(), Bind()
+5. JavaScript promises, async and await
+6. JavaScript callback 

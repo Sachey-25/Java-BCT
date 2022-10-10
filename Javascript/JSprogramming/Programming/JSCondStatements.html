@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript conditional statements</title>
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script>
+            let number=10;
+            if(number < 10){
+                message="Number is equal to 10"
+            }else{
+                message="Number is not equal to 10"
+            }
+            //display the result
+            document.getElementById("demo").innerHTML=message;
+        </script>
+        <p id="con"></p>
+         <script>
+            let age=8;
+            if(age == 18){
+                message="You are eligible to vote"
+            }else if(age>15 && age<18){
+                message="You are not eligible to vote"
+            }else{
+                message="You are too young"
+            }
+            //display the result
+            document.getElementById("con").innerHTML=message;
+        </script>
+        <script>
+            let digit=0.8;
+            if(digit == 0.8){
+                message="Its a decimal"
+            }else if(digit !=0.8 && digit !=0){
+                message="Its whole number"
+            }else if(digit==0){
+                message="Its a zero"
+            }else{
+                message="There's no digit available"
+            }
+            //display the result
+            document.getElementById("con").innerHTML=message;
+        </script>
+    </body>
+</html>

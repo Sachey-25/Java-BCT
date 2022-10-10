@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Functions</title>
+    </head>
+    <body>
+        <p id="add"></p>
+        <p>
+            A Javascript function is a block of code designed to perform a particular task.
+            A Javascript function is implemented and exteneded to when anything is 
+            called/invoked for the specific logic.
+        </p>
+        <p> Javascript function can be used with the keyword "function" and any name for it</p>
+        <p> Javascript function do contains syntax like () {},
+            () is used to supply the paramters/arguments
+            {} is the body of the function. where logic can be written
+            everytime we need to call/invoke the function associated with specfic function 
+            call.
+        </p>
+        <script>
+            //functions
+            function addition(numberOne,numberTwo){
+                //function body.
+                return numberOne+numberTwo;//120+100 = 220;
+            }
+            //lets display the function logic.
+            var result=addition(20,35);
+            document.getElementById("add").innerHTML=result;
+        </script>
+    </body>
+</html>

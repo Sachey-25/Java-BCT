@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript Loops</title>
+    </head>
+    <body>
+        <p id="loop"></p>
+        <p id="for"></p>
+        <p id="forin"></p>
+        <p id="forof"></p>
+        <script>
+            let i=0;
+            for(i==0;i<=10;i++){
+                message=i;
+            }
+            document.getElementById('loop').innerHTML=message;
+        </script>
+        <script>
+            const employee=["Sachin","Anil","Wipro","Bangalore"];
+            let j=0;
+            let len=employee.length;
+            let result="";
+            for(;j<len;){
+                result +=employee[j] + "<br/>";
+                j++
+            }
+            document.getElementById('for').innerHTML=result;
+        </script>
+        
+         <script>
+            const emp={
+                firstname:"Daniel",
+                lastname:"Keine",
+                City:"SanDiago",
+                State:"United states of america"
+            };
+            let person="";
+            //for in -- Here in is the membership operator!
+            for(let result in emp){
+                person +=emp[result] + "<br/>";
+               
+            }
+            document.getElementById('forin').innerHTML=person;
+        </script>
+        <script>
+            const colors=[
+                "Daniel",
+                "Keine",
+                "SanDiago",
+                "United states of america"]
+            let color="";
+            //for in -- Here in is the membership operator!
+            for(let result of colors){
+                color +=result + "<br/>";
+            }
+            document.getElementById('forof').innerHTML=color;
+        </script>
+        
+    </body>
+</html>

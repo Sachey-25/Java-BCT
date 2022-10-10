@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <title>JavaScript Operators</title>
+    <body>
+        <p>JavaScript Comparision Operators</p>
+        <p> '<' lesser than </p>
+        <p> '<=' lesser than equal </p>xdb
+        <p> '>' greater than </p>
+        <p> '>=' greate than then </p>
+        <p> '==' equal to </p>
+        <p> '===' Strictly Equal to </p>
+        <p> '!=' Not equal to  </p>
+        <p> '!===' strictly not equal to </p>
+        <h2 id="demo"></h2>
+        <h2 id="dem"></h2>
+        <h2 id="de"></h2>
+        <h2 id="d"></h2>
+        <h2 id="object"></h2>
+        <h2 id="objec"></h2>
+        <h2 id="obje"></h2>
+        <h2 id="obj"></h2>
+
+        <script>
+            var numb=8;
+            document.getElementById("demo").innerHTML="Is it less ? " + (numb<10) // true
+            document.getElementById("dem").innerHTML="Is it less then equal : " +(numb<=10)
+            document.getElementById("de").innerHTML="Is it greater than: "+(numb>10)
+            document.getElementById("d").innerHTML="Is it greater than equal to : "+(numb>=10)
+            document.getElementById("object").innerHTML="Is it not equal to: "+(numb!=10)
+            document.getElementById("objec").innerHTML="Is it strictly equal to : "+(numb===10)
+            document.getElementById("obje").innerHTML="Is it strictly not equal to : "+(numb!==10);
+            document.getElementById("obj").innerHTML="Is it Equals: "+(numb==10)
+        </script>
+        <h2>JavaScript Logical Operator</h2>
+        <h1>Logical And Operator</h1>
+        <p>Returns true if both the operands are true:</p>
+        <script>
+            let alpha=6;
+            let beta=8;
+            document.write("And Logical Operator for true Scenario :" + 
+                            (alpha < 10 && beta > alpha) + "<br>");
+            document.write("And Logical Operator for false Scenario :" + 
+                            (alpha<10 && beta <1));
+        </script>
+        <h1>Logical Or Operator</h1>
+        <p>Returns true if one of operand are true:</p>
+        <script>
+            document.write("OR Logical Operator for true Scenario :" + 
+                            (alpha < 10 || beta > alpha) + "<br>");
+            document.write("OR Logical Operator for false Scenario :" + 
+                            (alpha<10 || beta <1));
+        </script>
+        <p> Conditional Operator :? </p>
+        <p> It is also called as Ternary Operator </p>
+        <p> Input your age </p>
+        <input id="age" value="18" />
+        <button onclick="myFunction()">Click on</button>
+        <p id="ternary"></p>
+
+        <script>
+            //functional implementation
+            function myFunction() {
+            let age = document.getElementById("age").value;
+            let voteable = (age < 18) ? "Too young":"Old enough";
+            document.getElementById("ternary").innerHTML = voteable + " to vote.";
+            }
+        </script>
+        <p>Input a number</p>
+        <input id="number" value="2" />
+        <button onclick="evenOrodd()">click me</button>
+        <p id="even"></p>
+         <script>
+            //functional implementation
+            function evenOrodd() {
+            let number = document.getElementById("number").value;
+            let check = (number%2==0) ? "Even":"Odd";
+            document.getElementById("even").innerHTML = check + " number.";
+            }
+        </script>
+
+    </body>
+</html>

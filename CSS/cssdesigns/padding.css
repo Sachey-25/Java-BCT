@@ -1,0 +1,31 @@
+div.one{
+    border: 1px solid black;
+    padding: 25px 50px 35px 50px;
+    background-color: aqua;
+    width: 40%;
+    height: 60%;
+    margin: 20px;
+}
+div.two{
+    border: 1px solid #000000;
+    padding: 25px 50px 35px ;
+    background-color: aqua;
+    margin: 30px;
+}
+div.three{
+    border: 1px solid black;
+    padding: 25px;
+    background-color: aqua;
+    width: 300px;
+    box-sizing: border-box;
+    margin: 30px;
+}
+div.four{
+    border: 1px solid black;
+    padding: 25px;
+    background-color: aqua;
+    width: 300px;
+    box-sizing: border-box;
+    margin: 0;
+}
+

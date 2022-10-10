@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <h2>Strings are written in either single or double quotations</h2>
+        <h2>Numders are not needed any!</h2>
+        <p id="assign"></p>
+        <p> Operator Objects </p>
+        <p id="addition"></p>
+        <p id="sub"></p>
+        <p id="mul"></p>
+        <p id="div"></p>
+        <h3>JavaScript Operators</h3>
+        <p>Arithmetic, Assignment, Precedence, Comparision, Logical, Conditional, Type</p>
+        <p id="exp"></p>
+        <script>
+            const pi=3.14;
+            let person="Sachin Anil";
+            var answer="Yes! My name is the same."
+            document.getElementById("assign").innerHTML=pi +"<br>"+ person +"<br>"+answer;        </script>
+        </script>
+        
+        <script>
+            let numberOne=10;
+            let numberTwo=20;
+            let result=numberOne+numberTwo;
+            let substract=numberOne-numberTwo;
+            let multiply=numberOne*numberTwo;
+            let devide=numberOne/numberTwo;
+            document.getElementById("addition").innerHTML= 
+            numberOne + " + " + numberTwo + " = " + result;
+            document.getElementById("sub").innerHTML= 
+            numberOne + " - " + numberTwo + " = " + substract;
+            document.getElementById("mul").innerHTML= 
+            numberOne + " * " + numberTwo + " = " + multiply;
+            document.getElementById("div").innerHTML= 
+            numberOne + " / " + numberTwo + " = " + devide;
+
+            var digit=12;
+            document.write("Initial number : " + digit);
+            digit++; //post increment
+            document.write(" After post increment: " + digit) // 13
+            document.write("Initial number : " + digit);
+            digit--; // post decrement // 13-- 
+            document.write(" After post decrement: " + digit) //12
+            document.write("<br> ---------------------------------------- <br>")
+            document.write("Initial number : " + digit);
+            ++digit; //pre increment
+            document.write(" After pre increment: " + digit) // 13
+            document.write("Initial number : " + digit);
+            --digit; // pre decrement // 13-- 
+            document.write(" After pre decrement: " + digit) //12
+
+            document.write("Exponentiation ** ")
+            let x=3;
+            let z=x**4; // 3 power of 4 ---> 3*3*3*3 = 81
+            document.write(z + "<br>");
+            //console.log(z)
+            //document.getElementById("exp").innerHTML=z;
+            //window.alert(z);
+
+            //Operator precedence.
+            // BODMAS 
+            let ye=100+5*3; //5*3=15+ 100 = 115 || 100+5 = 105*3=315;\
+            document.write("Precedence Operator: " +ye + "<br>"); 
+            let nu=(2*2)+6/2-(6/2)*2; //BODMAS 
+               /* => 4+6/2-3*2
+                => 4+3-3*2
+                => 4+3-6
+                => 7-6 = 1 */ //ans
+            document.write("precedence :" +nu);
+        </script>
+        
+    </body>
+</html>

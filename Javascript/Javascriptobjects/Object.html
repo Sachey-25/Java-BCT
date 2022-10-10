@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Objects</title>
+    </head>
+    <body>
+        <h2>JavaScript Objects</h2>
+        <p> A Javascript objects can be used in {} and values with :</p>
+        <p id="object"></p>
+       
+        <script>
+            //Creating an object
+            const employee={
+                //objectName:propertyName
+                empid:101,
+                empname:"Sachin Anil",
+                empemail:"sachin@wipro.com",
+                empcity:"Bangalore"                
+            }
+            //Display the object data.
+            document.getElementById("object").innerHTML=
+            "empid : " + employee.empid + 
+            "<br/> name is : " + employee.empname +"<br/>"+ 
+            "Email id is: " + employee.empemail +  
+            "<br/> city is: " + employee.empcity;
+        </script>
+        <h2>This operator in Javascript.</h2>
+        <p>the this keyword refers to an object
+            which object depends on how 'this' is being invoked.(used/called).
+            The 'this' keyword refers to different depenging object logic.
+        </p>
+        <p id="colors"></p>
+        <p id="color"></p>
+        <p id="colo"></p>
+        <script>
+            //Creating an object
+            const colors={
+                rainbow:"VIBGYOR",
+                sky:"Skyblue",
+                navy:"Navyblue",
+                mango:"Orange",
+                //this operator -- constructor
+                result:function(){
+                    return this.rainbow + " " + this.navy;
+                }
+            }
+            //display data
+            document.getElementById("colors").innerHTML=colors.result();
+            document.getElementById("color").innerHTML=colors.sky;
+            document.getElementById("colo").innerHTML=colors.mango;
+        </script>
+        <p>the 'this' operator refers to objects depending on how it is used.
+            In an object method, "this" refers to the object.
+            Alone, "this" refers to the global object.
+            In a function, "this" refers to the global object.
+            In a function,in strict mode, "this" is undefined.
+            In an event, this refers to the element that received the event.
+            Methods like call(), apply() and bind() can refer to "this" to any object.
+        </p>
+
+    </body>
+</html>
