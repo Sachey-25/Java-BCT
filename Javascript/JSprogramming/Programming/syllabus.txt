@@ -5,12 +5,14 @@
 5. JavaScript switch statement
 6. JavaScript Loops -- For loop, for in loop, for Of loop, while loop
 7. JavaScript conditional statements -- continue and break;
-8. JavaScript collectiojns iterables, sets, Maps
+8. JavaScript collections iterables, sets, Maps
 
 ------------------****************----------Advanced--------------**************---------------
 1. JavaScript classes
 2. JavaScript objects
 3. JavaScript Arrow functions
 4. JavaScript functions -- Call(), Apply(), Bind()
-5. JavaScript promises, async and await
-6. JavaScript callback 
+--------------------------------------------------------------------------------------------------
+Typescript
+----------
+>>> 

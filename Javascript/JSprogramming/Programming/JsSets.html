@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript Sets</title>
+    </head>
+    <body>
+        
+        <h2>Set methods</h2>
+        <p>
+            1. new Set() -- Create a new Set <br/>
+            2. add() -- Adds a new eleemnts to the Set <br/>
+            3. delete() -- Removes an element from a Set <br/>
+            4. has() -- Returns true if a value exists in the set <br/>
+            5. forEach() -- Invokes a callback for each element in the Set <br/>
+            6. values() -- Returns an iterator with all the values in a Set <br/>
+            7. size -- Returns the number of elements in the Set(length).
+        </p>
+        <h2>Size of the set</h2>
+        <p>Size of the set can determined by using the method called size.</p>
+        <p id="set"></p>
+        <script>
+            //creating a set
+            const colors=new Set([
+                "white",
+                "orange",
+                "yellow",
+                "red",
+                "black",
+                "indigo"
+            ]);
+            //size
+            document.getElementById("set").innerHTML="Size of set is : "+colors.size;
+        </script>
+        <h2>Add elements to the set </h2>
+        <p>Adding new elements to the set by using add method</p>
+        <p id="add"></p>
+        <p id="elements"></p>
+        <p id="value"></p>
+        <p id="delete"></p>
+        <script>
+            //create an empty set
+            const employee=new Set();
+            //adding the values
+            employee.add("Sachin") //0
+            employee.add("Anil") //1
+            employee.add("Wipro") //2 
+            employee.add("Banaglore") //3 looping 
+            //display the data
+            document.getElementById("add").innerHTML=
+            "Size of another set is : " + employee.size;
+            //Set values() return a Set iterator.
+            document.getElementById("value").innerHTML=
+            "Size of another set is : " + employee.values();
+            document.getElementById("delete").innerHTML=
+            "Value deleted : " + employee.delete("Wipro");
+            //List of the elements
+            let count=""
+            for(const x of employee.values()){
+                count += x +"<br>"
+            }
+            document.getElementById("elements").innerHTML=count;
+        </script>
+        <h2>The forEach() method </h2>
+        <p>The forEach() method invokes a function for each Set element</p>
+        <p id="each"></p>
+        <p id="demo"></p>
+        <p id="has"></p>
+        <script>
+            //create an empty set
+            const products=new Set();
+            //adding the values
+            products.add("iPhone") //0
+            products.add("Nokia") //1
+            products.add("Motorolla") //2 
+            products.add("GooglePixel") //3 looping 
+            //display the data
+            document.getElementById("each").innerHTML=
+            "Size of product set is : " + products.size;
+            document.getElementById("has").innerHTML=
+            "iPhone is a part of product set : " +products.has("iPhone");
+            //list all elements using forEach()
+            let elem=""
+            products.forEach(function(value){
+                elem += value+"<br>";
+            })
+            document.getElementById("demo").innerHTML=elem;
+            
+            
+        </script>
+    </body>
+</html>

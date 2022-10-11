@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript Arrow functions</title>
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script>
+            //function --- keyword funtion..!! 
+            function functionName(){}
+            //Arrow function =>  
+            //Syntax:
+            //datatype (var, let const) functionName =(functionParameters) => function body!!!
+            let myFunction=()=>{
+                return "hello world";
+            }
+            document.getElementById("demo").innerText=myFunction();
+
+        </script>
+        <p id="object"></p>
+        <script>
+            let additon=(a,b)=>{
+                return a+b;
+            }
+            document.getElementById("object").innerText=
+            "Sum of 10 and 20 is: " +additon(10,20);
+        </script>
+        <p>
+            Arrow function doesn't need any return keyword as well. 
+        </p>
+        <p id="fun"></p>
+        <script>
+            let greeting="";
+            gretting = () => {
+                "This is without a return keyword"
+            }
+            document.getElementById("fun").innerHTML=greeting();
+        </script>
+        <p id="default"></p>
+        <script>
+            let something=""
+            something=(value)=>"Programming" + value;
+            document.getElementById("default").innerHTML=something(" is fun")
+        </script>
+    </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>javascript Classes</title>
+    </head>
+    <body>
+        <h2>Javascript classes</h2>
+        <p>
+            JavaScript classes can determined using keyword class
+            class should containt the constructor
+            class do also have class methods. 
+        </p>
+        <p id="demo"></p>
+        <script>
+            /*
+            syntax for class
+            keyword - class and classname { class body! }
+            */
+            class Person{
+                constructor(firstname,lastname,age,city,state){
+                    // we initialize values!!
+                    this.firstname=firstname;
+                    this.lastname=lastname;
+                    this.age=age;
+                    this.city=city;
+                    this.state=state;
+                }
+                //class methods
+                functionName(){
+                    console.log(this.firstname + " " +this.lastname);
+                    return this.firstname + " " +this.lastname;
+                    
+                }
+            }
+            // we need to create an object to the class to access the method.
+            let personDetails=new Person("Sachin","Anil",28,"Bangalore","Karnataka");
+            document.getElementById("demo").innerHTML= "My name is " + personDetails.functionName();
+
+        </script>
+        <p id="cla"></p>
+        <script>
+            class Detail{
+                constructor(name,city){
+                    this.name=name;
+                    this.city=city;
+                }
+                nameIs(name,city){
+                    console.log("My name is " + this.name + " " +"And I belong to " + this.city);
+                    document.write("My name is " + this.name + " " +"And I belong to " + this.city);
+                }
+                }
+            //create an object
+            let object=new Detail("Sachin","Bidar");
+            document.getElementById("cla").innerHTML=object.nameIs();
+        </script>
+    </body>
+</html>
