@@ -1,0 +1,97 @@
+<p>{{model | json}}</p>
+<div [hidden]="submitted">
+    <form #petForm="ngForm" (ngSubmit)="onSubmit()">
+        <div>
+            <label for="name">Name</label>
+            <input type="text"
+            id="name"
+            required
+            [(ngModel)]="model.name" name="name">
+        </div>
+        <div>
+            <label for="specie">Specie</label>
+            <select id="specie" required [(ngModel)]="model.specie" name="specie">
+                <option *ngFor="let specie of species" [value]="specie">
+                    {{specie}}
+                </option>
+            </select>
+        </div>
+        <button [disabled]="!petForm.form.valid" type="submit"> Submit</button>
+    </form>
+    </div>
+<div [hidden]="!submitted">
+    <h2>You submited:</h2>
+    <p>Name:{{model.name}}</p>
+    <p>Specie:{{model.specie}}</p>
+    <button (click)="submitted = false">Edit</button>
+</div>
+<hr>
+<hr>
+<div>
+    <label for="name">Name:</label>
+    <input id="name" type="text" [formControl]="name">
+    <p>Value: {{name.value}}</p>
+    <p>
+        <button (click)="updateName()">updateName</button>
+    </p>
+</div>
+<div>
+    <form [formGroup]="profileForm" (ngSubmit)="onSubmitform()">
+        <label for ="firstname">firstname: </label>
+        <input id="firstname" type="text" formControlName="firstname"><br/>
+        <label for ="lastname">lastname : </label>
+        <input id="lastname" type="text" formControlName="lastname"><br/>
+        <label for ="email">email : </label>
+        <input id="email" type="text" formControlName="email"><br/>
+        <label for ="city">city : </label>
+        <input id="city" type="text" formControlName="city"><br/>
+        <label for ="state">state : </label>
+        <input id="state" type="text" formControlName="state"><br/>
+        <button type="submit" [disabled]="!profileForm.valid">Submit </button>
+    </form>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <form [formGroup]="registerForm" (ngSubmit)="OnsubmitRegister()">
+
+                <div class="form-group">
+                    <label for="firstname">First Name:</label>
+                    <input formControlName="firstName" 
+                    [ngClass]="{'is-invalid':submitted && registerForm.controls['firstName'].errors}" 
+                    type="text" class="form-control">
+                    <div *ngIf="submitted && registerForm.controls ['FirstName'].errors" class="text-danger">
+                        <div *ngIf="submitted && registerForm.controls ['FirstName'].errors['required']">
+                            First name is required
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="firstname">Last Name:</label>
+                    <input formControlName="lastName" 
+                    [ngClass]="{'is-invalid':submitted && registerForm.controls['lastName'].errors}" 
+                    type="text" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="firstname">Email Address:</label>
+                    <input formControlName="email"
+                    [ngClass]="{'is-invalid':submitted && registerForm.controls['email'].errors}" 
+                    type="text" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="firstname">Password:</label>
+                    <input formControlName="password" 
+                    [ngClass]="{'is-invalid':submitted && registerForm.controls['password'].errors}" 
+                    type="password" class="form-control">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-primary">Register</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>

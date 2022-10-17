@@ -1,0 +1,11 @@
+Component Life Cycle. 
+---------------------
+1. constructor
+2. ngOnChnages
+3. ngOnit
+4. ngDoCheck
+5. ngAfterContentinit
+6. ngAfterContentChecked
+7. ngAfterViewInit
+8. ngAfterViewChecked
+9. ngOnDestroy

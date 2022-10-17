@@ -1,0 +1,66 @@
+{{ getMin(5,6) }}
+<app-parent></app-parent>
+<app-child class="active"></app-child>
+<app-childone>
+    <h2 style="text-align: center;color:green">Hello from root!</h2>
+    <h3 question> Can we take mulitple ng-Content?</h3>
+    <p Option A>A) Yes</p>
+    <p Option B>B) No</p>
+    <p Option C>C) Either A or B</p>
+    <p Option D>D) Only once we can make use of ng-content</p>
+    <p answer> Answer is: Option A</p>
+</app-childone>
+<style>
+    img{
+        margin:5px,10px,5px,10px;
+        border: 3px solid red;
+        width:25%;       
+    }
+</style>
+
+<!--Property Binding-->
+<p><img [src]="itemImageUrl"></p>
+<p><img [src]="itemImageUrl"></p>
+<p><img [src]="itemImageUrl"></p>
+
+
+<button [disabled]="isUnchanged">Disabled button</button>
+<button [id]="changed">click</button>
+
+<br/>
+<app-app-sizer [(size)]="fontSizepx"></app-app-sizer>
+<div [style.font-size.px]="fontSizepx">Resizible text</div>
+
+
+
+<table class="table caption-top">
+    <caption>List of users</caption>
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Larry</td>
+        <td>the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+  </table>
